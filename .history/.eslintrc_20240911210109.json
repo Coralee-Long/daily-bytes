@@ -1,0 +1,7 @@
+
+{
+  "rules": {
+    "jsx-quotes": ["error", "prefer-double"],  // Ensure double quotes are used in JSX
+    "quotes": ["error", "single", { "avoidEscape": true }]  // Allow single quotes except to avoid escaping
+  }
+}
