@@ -1,10 +1,10 @@
 // app/projects/page.tsx
 import React from 'react';
 
-const Nuggets: React.FC = () => {
+const Bytes: React.FC = () => {
   return (
     <div className="p-8 max-w-4xl mx-auto">
-      <h1 className="text-4xl font-bold mb-6 text-center">Nuggets</h1>
+      <h1 className="text-4xl font-bold mb-6 text-center">Bytes</h1>
       <p className="text-lg mb-4 text-center">
         Here are some of the projects I've worked on.
       </p>
@@ -34,4 +34,4 @@ const Nuggets: React.FC = () => {
   );
 };
 
-export default Nuggets;
+export default Bytes;
