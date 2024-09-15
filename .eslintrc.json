@@ -2,6 +2,8 @@
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
     "jsx-quotes": ["error", "prefer-double"], // Enforce the use of double quotes in JSX
-    "quotes": ["error", "single", { "avoidEscape": true }] // Enforce single quotes in JavaScript, but allow double quotes to avoid escaping
+    "quotes": ["error", "single", { "avoidEscape": true }], // Enforce single quotes in JavaScript, but allow double quotes to avoid escaping
+    "react/no-unescaped-entities": "off", // Disables the unescaped entities rule
+    "react/self-closing-comp": "error" // Enforce self-closing for elements without children
   }
 }
