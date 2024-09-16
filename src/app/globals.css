@@ -4,21 +4,38 @@
 
 :root {
   /* TO DO LATER: Light Theme */
-  --background: #ffffff; /* Light theme background */
-  --foreground: #171717; /* Light theme foreground */
+  --background: indigo-light-100; /* Light theme background */
+  --foreground: indigo-light-400; /* Light theme foreground */
+  --text-color: indigo-dark-900; /* Default text color for indigo-light-100 */
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: indigo-dark-900; /* Dark theme background */
-    --foreground: #ededed; /* Dark theme foreground */
+    --foreground: indo-light-800; /* Dark theme foreground */
+    --text-color: indigo-light-100; /* Default text color for dark theme */
   }
 }
 
 body {
-  color: var(--foreground);
+  color: var(--text-color); /* Set default text color */
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'GeistVF', 'GeistMonoVF', sans-serif; /* Use Geist fonts */
+  font-size: 1.6rem; /* Default body font size: 16px */
+}
+
+/* Ensure all text elements use the default text color */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  color: inherit; /* Ensure consistent text color */
 }
 
 @layer utilities {
