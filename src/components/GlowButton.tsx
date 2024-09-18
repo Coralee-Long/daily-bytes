@@ -5,6 +5,7 @@ interface GlowButtonProps<T extends React.ElementType> {
   children: React.ReactNode; // Button text or icon
   onClick?: () => void; // Optional click handler (relevant for button elements)
   color?: 'indigo' | 'white'; // Color options for different button styles
+  iconOnly?: boolean; // New prop to indicate if the button is an icon-only button
 }
 
 const GlowButton = <T extends React.ElementType = 'button'>({
@@ -12,6 +13,7 @@ const GlowButton = <T extends React.ElementType = 'button'>({
   children,
   onClick,
   color = 'indigo', // Default color
+  iconOnly = false, // Default to false for regular button
   ...props
 }: GlowButtonProps<T> &
   Omit<React.ComponentPropsWithoutRef<T>, keyof GlowButtonProps<T>>) => {
@@ -28,7 +30,10 @@ const GlowButton = <T extends React.ElementType = 'button'>({
     <Component
       onClick={Component === 'button' ? onClick : undefined} // Only add onClick if it's a button
       className={`
-        group relative inline-flex items-center justify-center px-6 py-2 
+        group relative inline-flex items-center justify-center 
+        ${
+          iconOnly ? 'w-12 h-12' : 'px-6 py-2'
+        } // Adjust width and height if iconOnly
         border border-transparent 
         rounded-full font-medium
         transition duration-300 ease-in-out 
