@@ -18,7 +18,7 @@ const config: Config = {
         'indigo-dark-600': '#14122e',
         'indigo-dark-800': '#0c0b1c',
         'indigo-dark-900': '#0b0a1c',
-        'indigo-light-100': '#3a347a', // Lightest indigo close to indigo-dark-100
+        'indigo-light-100': '#3a347a', // Darkest indigo-light - close to indigo-dark-100
         'indigo-light-200': '#504b8b',
         'indigo-light-300': '#66619c',
         'indigo-light-400': '#7d77ad',
@@ -76,6 +76,10 @@ const config: Config = {
         '56': '22.4rem', // 224px
         '64': '25.6rem', // 256px
       },
+    },
+    scale: {
+      101: '1.01', // Slightly subtle scale
+      102: '1.02', // A bit more noticeable, but less than 1.05
     },
   },
   plugins: [],

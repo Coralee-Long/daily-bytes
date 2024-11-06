@@ -1,7 +1,9 @@
-// next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  images: {
+    domains: ['res.cloudinary.com'],
+  },
+  // Other Next.js configuration options can go here
 };
 
 export default nextConfig;
