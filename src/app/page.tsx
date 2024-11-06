@@ -1,18 +1,15 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import React from 'react';
-
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Header */}
-      <Header />
-
-      {/* Main Content Area */}
-      <main className="flex-grow p-8 bg-indigo-dark-900" />
-
-      {/* Footer */}
-      <Footer />
+    <div className="p-8 max-w-4xl mx-auto">
+      <h1 className="text-4xl font-bold mb-6 text-center text-indigo-light-900">
+        Home Page
+      </h1>
+      <p className="text-center text-indigo-light-800">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi
+        harum nam necessitatibus vitae dignissimos, perferendis laborum
+        molestiae reprehenderit, error hic porro ratione iusto facere animi
+        magnam molestias ducimus vero!
+      </p>
     </div>
   );
 };

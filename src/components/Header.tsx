@@ -16,6 +16,7 @@ const Header: React.FC = () => {
   const HandleCloseMenu = () => {
     setIsExpanded(false);
   };
+
   return (
     <header className="relative bg-indigo-dark-900 text-white-100 p-6 px-10 h-[10vh]">
       <nav className="flex justify-between items-center w-100 mx-auto">
