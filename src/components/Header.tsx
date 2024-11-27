@@ -1,5 +1,5 @@
 'use client'; // Mark as Client Component
-
+import React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
 import GlowButton from './GlowButton';
@@ -42,6 +42,16 @@ const Header: React.FC = () => {
                 className="block w-full h-full rounded-full text-inherit hover:no-underline"
               >
                 Bytes
+              </Link>
+            </GlowButton>
+          </li>
+          <li>
+            <GlowButton as="span" color="indigo">
+              <Link
+                href="/snippets"
+                className="block w-full h-full rounded-full text-inherit hover:no-underline"
+              >
+                Snippets
               </Link>
             </GlowButton>
           </li>

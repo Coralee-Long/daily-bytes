@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         {/* Subscribe Section */}
         <div className="md:col-span-1">
           <h3 className="text-lg font-semibold mb-4">
-            Subscribe to our Newsletter
+            Subscribe to my Newsletter
           </h3>
           <p className="text-sm mb-6">
             Stay updated with the latest tech experiments and portfolio items.
@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           <div className="flex w-full">
             <input
               type="email"
-              placeholder="Enter email address"
+              placeholder="email address"
               className="px-4 py-2 rounded-l-full bg-indigo-dark-900 text-white-100 w-full border border-indigo-dark-400 focus:border-indigo-light-100 focus:outline-none transition duration-300"
             />
             <button className="px-6 py-2 rounded-r-full bg-indigo-dark-200 hover:bg-indigo-dark-400 text-white transition duration-300">
@@ -29,11 +29,11 @@ const Footer: React.FC = () => {
         <div className="md:col-span-1">
           <h4 className="text-lg font-semibold mb-4">Contact Me</h4>
           <ul className="space-y-2">
-            <li>Email: example@example.com</li>
-            <li>Phone: +123 456 7890</li>
+            <li>Email: coraleelong@gmail.com</li>
+            <li>Phone: + 49 1522 3454 924</li>
           </ul>
           <p className="font-medium text-base mt-4">
-            This is some text with medium weight and base size.
+            I might add some linkedIn/github icons and links here
           </p>
         </div>
 

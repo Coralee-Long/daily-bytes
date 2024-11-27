@@ -1,6 +1,6 @@
 import GlowCard from '@/components/GlowCard';
 
-const Bytes: React.FC = () => {
+const Snippets: React.FC = () => {
   return (
     <div className="p-8 w-100 mx-auto">
       <h1 className="text-4xl font-bold mb-6 text-center text-indigo-light-900">
@@ -45,4 +45,4 @@ const Bytes: React.FC = () => {
   );
 };
 
-export default Bytes;
+export default Snippets;

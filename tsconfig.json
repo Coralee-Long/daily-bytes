@@ -1,47 +1,20 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "target": "ES2020", // Supports modern features for ES2020
+    "moduleResolution": "node", // Align module resolution with Node.js
     "allowJs": true,
-    "skipLibCheck": true,
+    "checkJs": false, // Only type-check TypeScript files
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "baseUrl": ".", // Base URL set to the root of the project
+    "baseUrl": ".", // Ensures paths are relative to the project root
     "paths": {
-      "@/components/*": [
-        "src/components/*"
-      ], // Alias for components folder
-      "@/app/*": [
-        "src/app/*"
-      ], // Alias for app folder
-      "@/styles/*": [
-        "src/styles/*"
-      ] // Alias for styles folder
-    },
-    "target": "ES2017"
+      "@/components/*": ["src/components/*"] // Maps "@/components" to "src/components"
+    }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }

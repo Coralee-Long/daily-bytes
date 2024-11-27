@@ -2,7 +2,7 @@ const Home: React.FC = () => {
   return (
     <div className="p-8 max-w-4xl mx-auto">
       <h1 className="text-4xl font-bold mb-6 text-center text-indigo-light-900">
-        Home Page
+        Welcome to my BrainDump
       </h1>
       <p className="text-center text-indigo-light-800">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi
