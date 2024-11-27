@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Project One",
+    "description": "A brief description of Project One.",
+    "variant": "image",
+    "color": "indigo",
+    "imagePublicId": "florian-olivo-4hbJ-eymZ1o-unsplash_slcrri"
+  },
+  {
+    "title": "Project Two",
+    "description": "A brief description of Project Two.",
+    "variant": "image",
+    "color": "indigo",
+    "imagePublicId": "luca-bravo-XJXWbfSo2f0-unsplash_bvdnce"
+  },
+  {
+    "title": "Project Three",
+    "description": "A brief description of Project Three.",
+    "variant": "image",
+    "color": "indigo",
+    "imagePublicId": "growtika-58K6WZiwd0g-unsplash_x0x9ya"
+  },
+  {
+    "title": "Project Four",
+    "description": "A brief description of Project Four.",
+    "variant": "image",
+    "color": "indigo",
+    "imagePublicId": "lewis-kang-ethe-ngugi-f5pTwLHCsAg-unsplash_gyuk0l"
+  }
+]

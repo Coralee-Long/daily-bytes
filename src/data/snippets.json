@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Java Data Types",
+    "description": "Summary of Java Data Types",
+    "variant": "code",
+    "color": "indigo",
+    "code": "public class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}",
+    "language": "java"
+  },
+  {
+    "title": "Java Arrays",
+    "description": "Key points of Java Arrays",
+    "variant": "code",
+    "color": "indigo",
+    "code": "int[] numbers = {1, 2, 3, 4, 5};\nfor (int num : numbers) {\n    System.out.println(num);\n}",
+    "language": "java"
+  },
+  {
+    "title": "Python Function",
+    "description": "How to define and call a function in Python",
+    "variant": "code",
+    "color": "indigo",
+    "code": "def greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"World\")",
+    "language": "python"
+  },
+  {
+    "title": "JavaScript Arrow Functions",
+    "description": "Using arrow functions in JavaScript",
+    "variant": "code",
+    "color": "indigo",
+    "code": "const greet = (name) => {\n    console.log(`Hello, ${name}!`);\n};\n\ngreet(\"World\");",
+    "language": "javascript"
+  },
+  {
+    "title": "C++ Hello World",
+    "description": "A simple Hello World program in C++",
+    "variant": "code",
+    "color": "indigo",
+    "code": "#include <iostream>\n\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}",
+    "language": "cpp"
+  },
+  {
+    "title": "HTML Boilerplate",
+    "description": "A basic HTML boilerplate for starting a webpage",
+    "variant": "code",
+    "color": "indigo",
+    "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>My Webpage</title>\n</head>\n<body>\n    <h1>Welcome to My Webpage</h1>\n    <p>Hello, World!</p>\n</body>\n</html>",
+    "language": "html"
+  },
+  {
+    "title": "CSS Flexbox",
+    "description": "Basic usage of Flexbox for layout",
+    "variant": "code",
+    "color": "indigo",
+    "code": "body {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100vh;\n    background-color: #f0f0f0;\n}",
+    "language": "css"
+  },
+  {
+    "title": "SQL Select Query",
+    "description": "A basic SELECT query in SQL",
+    "variant": "code",
+    "color": "indigo",
+    "code": "SELECT first_name, last_name\nFROM employees\nWHERE department = 'Engineering';",
+    "language": "sql"
+  }
+]

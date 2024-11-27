@@ -12,8 +12,17 @@
     "incremental": true,
     "baseUrl": ".", // Ensures paths are relative to the project root
     "paths": {
-      "@/components/*": ["src/components/*"] // Maps "@/components" to "src/components"
-    }
+      "@/*": ["src/*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "module": "esnext",
+    "isolatedModules": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]

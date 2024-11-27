@@ -5,18 +5,15 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
-    "prettier" // Disables ESLint rules conflicting with Prettier
+    "prettier"
   ],
-  "plugins": ["prettier"], // Add Prettier as a plugin
+  "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": "error", // Use Prettier as a rule
-    "jsx-quotes": ["error", "prefer-double"],
-    "quotes": ["error", "single", { "avoidEscape": true }],
+    "prettier/prettier": "error",
     "react/no-unescaped-entities": "off",
     "react/self-closing-comp": "error",
-    "react/react-in-jsx-scope": "off", // Disable the rule requiring React in scope
-    "react/jsx-uses-react": "off", // Disable the rule requiring React import
-    "react/jsx-uses-vars": "error" // Ensure variables in JSX are marked as used
-  },
-  "globals": { "React": true }
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "react/jsx-uses-vars": "error"
+  }
 }

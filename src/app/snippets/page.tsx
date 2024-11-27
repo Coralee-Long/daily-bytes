@@ -1,45 +1,42 @@
+import React from 'react';
 import GlowCard from '@/components/GlowCard';
+import snippetsData from '@/data/snippets.json'; // Import snippets data
+
+// Define the TypeScript interface for a snippet
+interface Snippet {
+  title: string;
+  description: string;
+  variant: 'code'; // Snippets page will only use the 'code' variant
+  color: 'indigo' | 'white'; // Restrict to valid colors
+  code: string;
+  language: string;
+}
+
+// Assert that the imported JSON data conforms to the Snippet[] type
+const snippets: Snippet[] = snippetsData as Snippet[];
 
 const Snippets: React.FC = () => {
   return (
     <div className="p-8 w-100 mx-auto">
       <h1 className="text-4xl font-bold mb-6 text-center text-indigo-light-900">
-        Bytes
+        Snippets
       </h1>
       <p className="text-lg mb-4 text-center text-indigo-light-800">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quas
-        nemo, eaque tempore cum commodi, recusandae adipisci ullam hic beatae
-        consequatur assumenda voluptate explicabo suscipit quo id similique
-        consequuntur tempora?
+        Explore a collection of useful code snippets!
       </p>
 
-      {/* Example of a grid layout for projects */}
-
       <div className="p-8 mx-auto grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <GlowCard
-          title="Project One"
-          description="A brief description of Project One."
-          imagePublicId="florian-olivo-4hbJ-eymZ1o-unsplash_slcrri"
-          color="indigo"
-        />
-        <GlowCard
-          title="Project Two"
-          description="A brief description of Project Two."
-          imagePublicId="luca-bravo-XJXWbfSo2f0-unsplash_bvdnce"
-          color="indigo"
-        />
-        <GlowCard
-          title="Project Three"
-          description="A brief description of Project Three."
-          imagePublicId="growtika-58K6WZiwd0g-unsplash_x0x9ya"
-          color="indigo"
-        />
-        <GlowCard
-          title="Project Four"
-          description="A brief description of Project Four."
-          imagePublicId="lewis-kang-ethe-ngugi-f5pTwLHCsAg-unsplash_gyuk0l"
-          color="indigo"
-        />
+        {snippets.map((snippet, index) => (
+          <GlowCard
+            key={index}
+            title={snippet.title}
+            description={snippet.description}
+            variant={snippet.variant}
+            color={snippet.color}
+            code={snippet.code}
+            language={snippet.language}
+          />
+        ))}
       </div>
     </div>
   );

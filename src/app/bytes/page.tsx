@@ -1,4 +1,18 @@
+import React from 'react';
 import GlowCard from '@/components/GlowCard';
+import bytesData from '@/data/bytes.json'; // Import bytes data
+
+// Define the TypeScript interface for a byte
+interface Byte {
+  title: string;
+  description: string;
+  variant: 'image'; // Bytes page will only use the 'image' variant
+  color: 'indigo' | 'white'; // Restrict to valid colors
+  imagePublicId: string; // Required for image variant
+}
+
+// Assert that the imported JSON data conforms to the Byte[] type
+const bytes: Byte[] = bytesData as Byte[];
 
 const Bytes: React.FC = () => {
   return (
@@ -7,39 +21,20 @@ const Bytes: React.FC = () => {
         Bytes
       </h1>
       <p className="text-lg mb-4 text-center text-indigo-light-800">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quas
-        nemo, eaque tempore cum commodi, recusandae adipisci ullam hic beatae
-        consequatur assumenda voluptate explicabo suscipit quo id similique
-        consequuntur tempora?
+        Explore inspiring projects and ideas!
       </p>
 
-      {/* Example of a grid layout for projects */}
-
       <div className="p-8 mx-auto grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <GlowCard
-          title="Project One"
-          description="A brief description of Project One."
-          imagePublicId="florian-olivo-4hbJ-eymZ1o-unsplash_slcrri"
-          color="indigo"
-        />
-        <GlowCard
-          title="Project Two"
-          description="A brief description of Project Two."
-          imagePublicId="luca-bravo-XJXWbfSo2f0-unsplash_bvdnce"
-          color="indigo"
-        />
-        <GlowCard
-          title="Project Three"
-          description="A brief description of Project Three."
-          imagePublicId="growtika-58K6WZiwd0g-unsplash_x0x9ya"
-          color="indigo"
-        />
-        <GlowCard
-          title="Project Four"
-          description="A brief description of Project Four."
-          imagePublicId="lewis-kang-ethe-ngugi-f5pTwLHCsAg-unsplash_gyuk0l"
-          color="indigo"
-        />
+        {bytes.map((byte, index) => (
+          <GlowCard
+            key={index}
+            title={byte.title}
+            description={byte.description}
+            variant={byte.variant}
+            color={byte.color}
+            imagePublicId={byte.imagePublicId}
+          />
+        ))}
       </div>
     </div>
   );
